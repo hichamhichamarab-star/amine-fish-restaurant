@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القائمة الكاملة | مطعم أمين للسمك - الدار البيضاء</title>
+    <meta name="description" content="قائمة مطعم أمين للسمك الكاملة - أسمак طازجة، مشاوي، تاجين، باستا، بيتزا والمشروبات. أسعار معقولة وجودة عالية.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐟</text></svg>">
+    <style>
+        .menu-item-image {
+            height: 200px;
+            background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            overflow: hidden;
+            position: relative;
+        }
+        .menu-item-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .price-badge {
+            background: var(--accent);
+            color: var(--primary-dark);
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🐟</div>
+                <div class="logo-text">
+                    <span>مطعم أمين</span>
+                    <small>للأسماك الطازجة</small>
+                </div>
+            </a>
+            <button class="nav-toggle" aria-label="القائمة">
+                <span>☰</span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="menu.html" class="nav-link active">القائمة</a></li>
+                <li><a href="reservation.html" class="nav-link">حجز</a></li>
+                <li><a href="about.html" class="nav-link">من نحن</a></li>
+                <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+                <li><button class="lang-switch" aria-label="Language">EN</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>🍽️ القائمة</h1>
+        <p>اختر من أشهى المأكولات البحرية الطازجة</p>
+    </header>
+
+    <!-- ساعات العمل -->
+    <section class="working-hours-section">
+        <div class="section-container">
+            <div class="hours-box fade-in">
+                <h2>⏰ ساعات العمل</h2>
+                <div class="hours-grid">
+                    <div class="hour-item">
+                        <span class="day">الإثنين - الخميس</span>
+                        <span class="time">10:00 - 22:30</span>
+                    </div>
+                    <div class="hour-item">
+                        <span class="day">الجمعة</span>
+                        <span class="time">12:00 - 23:00</span>
+                    </div>
+                    <div class="hour-item">
+                        <span class="day">السبت</span>
+                        <span class="time">10:00 - 23:30</span>
+                    </div>
+                    <div class="hour-item">
+                        <span class="day">الأحد</span>
+                        <span class="time">10:00 - 22:30</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <div class="section-container">
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="all">الكل</button>
+                <button class="menu-tab" data-category="grillades">السمك المشوي</button>
+                <button class="menu-tab" data-category="tajine">التاجين</button>
+                <button class="menu-tab" data-category="pasta">الباستا</button>
+                <button class="menu-tab" data-category="pizza">البيتزا</button>
+                <button class="menu-tab" data-category="drinks">المشروبات</button>
+            </div>
+
+            <div class="menu-items-grid">
+                <!-- السمك المشوي -->
+                <div class="menu-item fade-in" data-category="grillades">
+                    <div class="menu-item-image">🐟</div>
+                    <h3>سمك درّاك مشوي</h3>
+                    <p class="item-description">سمك درّاك طازج مشوي بطريقة تقليدية مع الزيت والليمون والملح</p>
+                    <div class="price-badge">180 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <div class="menu-item fade-in" data-category="grillades">
+                    <div class="menu-item-image">🐟</div>
+                    <h3>سمك موسى مشوي</h3>
+                    <p class="item-description">سمك موسى لذيذ مشوي بطريقة احترافية مع البهارات المختارة</p>
+                    <div class="price-badge">160 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <div class="menu-item fade-in" data-category="grillades">
+                    <div class="menu-item-image">🦐</div>
+                    <h3>جمبري مشوي</h3>
+                    <p class="item-description">جمبري طازج مشوي مع الثوم والزبدة والليمون</p>
+                    <div class="price-badge">200 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <div class="menu-item fade-in" data-category="grillades">
+                    <div class="menu-item-image">🦞</div>
+                    <h3>أخطبوط مشوي</h3>
+                    <p class="item-description">أخطبوط طري مشوي بطريقة احترافية مع صلصة الثوم</p>
+                    <div class="price-badge">190 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <!-- التاجين -->
+                <div class="menu-item fade-in" data-category="tajine">
+                    <div class="menu-item-image">🥘</div>
+                    <h3>تاجين السمك التقليدي</h3>
+                    <p class="item-description">سمك مع الخضار والزيتون واللمون المحفوظ بالطريقة المغربية</p>
+                    <div class="price-badge">150 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <div class="menu-item fade-in" data-category="tajine">
+                    <div class="menu-item-image">🥘</div>
+                    <h3>تاجين الجمبري</h3>
+                    <p class="item-description">جمبري مع الأرز والخضار بصلصة غنية وطعم لذيذ</p>
+                    <div class="price-badge">170 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <div class="menu-item fade-in" data-category="tajine">
+                    <div class="menu-item-image">🥘</div>
+                    <h3>تاجين بحري مختلط</h3>
+                    <p class="item-description">مزيج من الأسماك والجمبري والأخطبوط مع الصلصة التقليدية</p>
+                    <div class="price-badge">220 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <div class="menu-item fade-in" data-category="tajine">
+                    <div class="menu-item-image">🥘</div>
+                    <h3>تاجين بخضار بحري</h3>
+                    <p class="item-description">تاجين أسماك مع البطاطا والجزر والبصل والكرفس</p>
+                    <div class="price-badge">140 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <!-- الباستا -->
+                <div class="menu-item fade-in" data-category="pasta">
+                    <div class="menu-item-image">🍝</div>
+                    <h3>باستا الجمبري</h3>
+                    <p class="item-description">باستا طازجة مع جمبري وصلصة الطماطم والثوم والزيت</p>
+                    <div class="price-badge">130 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <div class="menu-item fade-in" data-category="pasta">
+                    <div class="menu-item-image">🍝</div>
+                    <h3>باستا بالأسماك</h3>
+                    <p class="item-description">باستا مع قطع سمك مشوية وصلصة كريمة لذيذة</p>
+                    <div class="price-badge">120 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <div class="menu-item fade-in" data-category="pasta">
+                    <div class="menu-item-image">🍝</div>
+                    <h3>باستا بحرية مختلطة</h3>
+                    <p class="item-description">باستا مع جمبري وأخطبوط وسمك بصلصة البيض</p>
+                    <div class="price-badge">150 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <div class="menu-item fade-in" data-category="pasta">
+                    <div class="menu-item-image">🍝</div>
+                    <h3>باستا الكريمة والأعشاب</h3>
+                    <p class="item-description">باستا كلاسيكية مع صلصة الكريمة والأعشاب الطازجة</p>
+                    <div class="price-badge">90 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <!-- البيتزا -->
+                <div class="menu-item fade-in" data-category="pizza">
+                    <div class="menu-item-image">🍕</div>
+                    <h3>بيتزا الأسماك</h3>
+                    <p class="item-description">بيتزا مع الأسماك والبصل والفلفل والجبن الموتزاريلا</p>
+                    <div class="price-badge">80 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <div class="menu-item fade-in" data-category="pizza">
+                    <div class="menu-item-image">🍕</div>
+                    <h3>بيتزا الجمبري</h3>
+                    <p class="item-description">بيتزا مع جمبري طازج والطماطم والفلفل والجبن</p>
+                    <div class="price-badge">90 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <div class="menu-item fade-in" data-category="pizza">
+                    <div class="menu-item-image">🍕</div>
+                    <h3>بيتزا بحرية مختلطة</h3>
+                    <p class="item-description">بيتزا مع أسماك وجمبري وأخطبوط والجبن الذائب</p>
+                    <div class="price-badge">100 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <div class="menu-item fade-in" data-category="pizza">
+                    <div class="menu-item-image">🍕</div>
+                    <h3>بيتزا الخضار البحري</h3>
+                    <p class="item-description">بيتزا مع خضار متنوعة وأسماك بصلصة الطماطم</p>
+                    <div class="price-badge">75 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <!-- المشروبات -->
+                <div class="menu-item fade-in" data-category="drinks">
+                    <div class="menu-item-image">🧃</div>
+                    <h3>عصير البرتقال الطازج</h3>
+                    <p class="item-description">عصير برتقال طازج مصنوع من أجود أنواع البرتقال</p>
+                    <div class="price-badge">25 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <div class="menu-item fade-in" data-category="drinks">
+                    <div class="menu-item-image">🧃</div>
+                    <h3>عصير الرمان</h3>
+                    <p class="item-description">عصير رمان طازج بطعم حامض لذيذ ومنعش</p>
+                    <div class="price-badge">30 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <div class="menu-item fade-in" data-category="drinks">
+                    <div class="menu-item-image">☕</div>
+                    <h3>القهوة المغربية</h3>
+                    <p class="item-description">قهوة مغربية تقليدية بطعم السماق والتوابل</p>
+                    <div class="price-badge">20 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+
+                <div class="menu-item fade-in" data-category="drinks">
+                    <div class="menu-item-image">🍵</div>
+                    <h3>الشاي بالنعناع</h3>
+                    <p class="item-description">شاي أخضر بالنعناع الطازج والعسل الفاخر</p>
+                    <div class="price-badge">15 درهم</div>
+                    <button class="btn btn-small">أضف إلى السلة</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="section-container">
+            <h2>جاهز للحجز؟</h2>
+            <p>احجز طاولتك الآن واستمتع بأفضل المأكولات البحرية</p>
+            <a href="reservation.html" class="btn btn-primary">احجز الآن</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <h4>🐟 مطعم أمين للسمك</h4>
+                <p>أشهى المأكولات البحرية الطازجة في قلب الدار البيضاء.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/snackamine.darbouaza/" target="_blank" rel="noopener" class="social-link">f</a>
+                    <a href="https://www.instagram.com/explore/tags/snackamine/" target="_blank" rel="noopener" class="social-link">📷</a>
+                    <a href="https://www.tripadvisor.com/" target="_blank" rel="noopener" class="social-link">T</a>
+                </div>
+            </div>
+            <div>
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="menu.html">القائمة</a></li>
+                    <li><a href="reservation.html">حجز طاولة</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>ساعات العمل</h4>
+                <ul>
+                    <li>الإثنين - الخميس: 10:00 - 22:30</li>
+                    <li>الجمعة: 12:00 - 23:00</li>
+                    <li>السبت: 10:00 - 23:30</li>
+                    <li>الأحد: 10:00 - 22:30</li>
+                </ul>
+            </div>
+            <div>
+                <h4>اتصل بنا</h4>
+                <p>📍 32 زنقة الشاوية، الدار البيضاء</p>
+                <p>📞 <a href="tel:+212522541331">+212 522 541 331</a></p>
+                <p>📧 <a href="mailto:info@amine-fish.ma">info@amine-fish.ma</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 مطعم أمين للسمك - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Menu filtering
+        const menuTabs = document.querySelectorAll('.menu-tab');
+        const menuItems = document.querySelectorAll('.menu-item');
+
+        menuTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                menuTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                const category = tab.getAttribute('data-category');
+                menuItems.forEach(item => {
+                    if (category === 'all') {
+                        item.style.display = 'block';
+                    } else {
+                        const itemCategory = item.getAttribute('data-category');
+                        item.style.display = itemCategory === category ? 'block' : 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
