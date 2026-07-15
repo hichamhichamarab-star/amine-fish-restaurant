@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا | مطعم أمين للسمك - الدار البيضاء</title>
+    <meta name="description" content="تواصل مع مطعم أمين للسمك في الدار البيضاء. العنوان، أرقام الهاتف، ساعات العمل، البريد الإلكتروني.">
+    <meta name="keywords" content="اتصل بنا, عنوان مطعم أمين, هاتف, الدار البيضاء">
+    <link rel="canonical" href="https://amine-fish-restaurant.com/contact.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐟</text></svg>">
+</head>
+<body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🐟</div>
+                <div class="logo-text">
+                    <span>مطعم أمين</span>
+                    <small>للأسماك الطازجة</small>
+                </div>
+            </a>
+
+            <button class="nav-toggle" aria-label="القائمة">
+                <span>☰</span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="menu.html" class="nav-link">القائمة</a></li>
+                <li><a href="reservation.html" class="nav-link">حجز</a></li>
+                <li><a href="about.html" class="nav-link">من نحن</a></li>
+                <li><a href="contact.html" class="nav-link active">اتصل بنا</a></li>
+                <li><button class="lang-switch" aria-label="Language">EN</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <header class="page-header">
+        <h1>📞 اتصل بنا</h1>
+        <p>نحن في خدمتكم - لا تتردد في التواصل معنا</p>
+    </header>
+
+    <!-- ===== CONTACT INFO ===== -->
+    <section class="info-section">
+        <div class="section-container">
+            <div class="info-grid">
+                <div class="info-card fade-in">
+                    <div class="info-icon">📍</div>
+                    <h3>العنوان</h3>
+                    <p>32 زنقة الشاوية<br>الدار البيضاء 20000<br>المغرب<br><small>بالقرب من السوق المركزي</small></p>
+                </div>
+
+                <div class="info-card fade-in">
+                    <div class="info-icon">📞</div>
+                    <h3>الهاتف</h3>
+                    <p>
+                        <a href="tel:+212522541331">+212 522 541 331</a><br>
+                        <a href="tel:+212661724655">+212 661 724 655</a><br>
+                        <a href="tel:+212674110110">+212 674 110 110</a>
+                    </p>
+                </div>
+
+                <div class="info-card fade-in">
+                    <div class="info-icon">📧</div>
+                    <h3>البريد الإلكتروني</h3>
+                    <p>
+                        <a href="mailto:info@amine-fish.ma">info@amine-fish.ma</a><br>
+                        <a href="mailto:reservations@amine-fish.ma">reservations@amine-fish.ma</a>
+                    </p>
+                </div>
+
+                <div class="info-card fade-in">
+                    <div class="info-icon">🕒</div>
+                    <h3>ساعات العمل</h3>
+                    <p>
+                        الإثنين - الخميس: 10:00 - 22:30<br>
+                        الجمعة: 12:00 - 23:00<br>
+                        السبت: 10:00 - 22:30<br>
+                        الأحد: 10:00 - 22:30
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT FORM + MAP ===== -->
+    <section class="features">
+        <div class="section-container">
+            <div class="contact-grid">
+                <div class="reservation-form-card fade-in">
+                    <h2>📨 أرسل لنا رسالة</h2>
+                    <p>هل لديك سؤال أو استفسار؟ أرسل لنا وسنرد عليك في أقرب وقت</p>
+
+                    <form id="contactForm" novalidate>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="c-name">الاسم <span class="required">*</span></label>
+                                <input type="text" id="c-name" name="name" required placeholder="اسمك">
+                            </div>
+                            <div class="form-group">
+                                <label for="c-email">البريد <span class="required">*</span></label>
+                                <input type="email" id="c-email" name="email" required placeholder="email@example.com">
+                            </div>
+                            <div class="form-group full">
+                                <label for="c-subject">الموضوع <span class="required">*</span></label>
+                                <input type="text" id="c-subject" name="subject" required placeholder="موضوع الرسالة">
+                            </div>
+                            <div class="form-group full">
+                                <label for="c-message">الرسالة <span class="required">*</span></label>
+                                <textarea id="c-message" name="message" required rows="5" placeholder="اكتب رسالتك هنا..."></textarea>
+                            </div>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary">
+                                <span>📤</span> إرسال الرسالة
+                            </button>
+                        </div>
+                        <div class="form-message" role="alert"></div>
+                    </form>
+                </div>
+
+                <div class="fade-in">
+                    <h2 style="margin-bottom: 1rem;">📍 موقعنا على الخريطة</h2>
+                    <p style="margin-bottom: 1.5rem;">موقع مميز في قلب الدار البيضاء، يمكن الوصول إليه بسهولة عبر الترامواي.</p>
+
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.5!2d-7.6172!3d33.5952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM1JzQyLjciTiA3wrAzNyczMC4wIlc!5e0!3m2!1sar!2sma!4v1700000000000!5m2!1sar!2sma"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="موقع مطعم أمين للسمك">
+                        </iframe>
+                    </div>
+
+                    <div class="transport-info">
+                        <h3>🚊 كيفية الوصول</h3>
+                        <ul>
+                            <li>🚊 <strong>الترامواي:</strong> محطة السوق المركزي (Marché Central)</li>
+                            <li>🚗 <strong>بالسيارة:</strong> موقف سيارات مجاني متاح</li>
+                            <li>🚕 <strong>سيارة أجرة:</strong> اطلب "Marché Central, Casablanca"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <h4>🐟 مطعم أمين للسمك</h4>
+                <p>أشهى المأكولات البحرية الطازجة في قلب الدار البيضاء.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/snackamine.darbouaza/" target="_blank" rel="noopener" class="social-link">f</a>
+                    <a href="https://www.instagram.com/explore/tags/snackamine/" target="_blank" rel="noopener" class="social-link">📷</a>
+                    <a href="https://www.tripadvisor.com/" target="_blank" rel="noopener" class="social-link">T</a>
+                </div>
+            </div>
+
+            <div>
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="menu.html">القائمة</a></li>
+                    <li><a href="reservation.html">حجز طاولة</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>الأطباق المميزة</h4>
+                <ul>
+                    <li><a href="menu.html#grillades">السمك المشوي</a></li>
+                    <li><a href="menu.html#tajine">التاجين</a></li>
+                    <li><a href="menu.html#plats">الأطباق المختلطة</a></li>
+                    <li><a href="menu.html#pasta">الباستا</a></li>
+                    <li><a href="menu.html#drinks">المشروبات</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>اتصل بنا</h4>
+                <p>📍 32 زنقة الشاوية، الدار البيضاء</p>
+                <p>📞 <a href="tel:+212522541331">+212 522 541 331</a></p>
+                <p>📧 <a href="mailto:info@amine-fish.ma">info@amine-fish.ma</a></p>
+                <p>🕒 يومياً: 10:00 - 22:30</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 مطعم أمين للسمك - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Contact form handler
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const formData = new FormData(contactForm);
+                const data = Object.fromEntries(formData);
+
+                if (!data.name || !data.email || !data.subject || !data.message) {
+                    const msg = contactForm.querySelector('.form-message');
+                    msg.className = 'form-message error';
+                    msg.textContent = 'يرجى ملء جميع الحقول المطلوبة';
+                    return;
+                }
+
+                // Save to localStorage
+                const messages = JSON.parse(localStorage.getItem('messages') || '[]');
+                messages.push({
+                    ...data,
+                    createdAt: new Date().toISOString()
+                });
+                localStorage.setItem('messages', JSON.stringify(messages));
+
+                const msg = contactForm.querySelector('.form-message');
+                msg.className = 'form-message success';
+                msg.textContent = 'شكراً لرسالتك! سنرد عليك في أقرب وقت ممكن.';
+
+                contactForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>

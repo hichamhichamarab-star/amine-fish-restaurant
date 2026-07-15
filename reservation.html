@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز طاولة | مطعم أمين للسمك - الدار البيضاء</title>
+    <meta name="description" content="احجز طاولتك الآن في مطعم أمين للسمك بالدار البيضاء. حجز سريع وسهل أون لاين.">
+    <link rel="canonical" href="https://amine-fish-restaurant.com/reservation.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐟</text></svg>">
+</head>
+<body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🐟</div>
+                <div class="logo-text">
+                    <span>مطعم أمين</span>
+                    <small>للأسماك الطازجة</small>
+                </div>
+            </a>
+
+            <button class="nav-toggle" aria-label="القائمة">
+                <span>☰</span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="menu.html" class="nav-link">القائمة</a></li>
+                <li><a href="reservation.html" class="nav-link active">حجز</a></li>
+                <li><a href="about.html" class="nav-link">من نحن</a></li>
+                <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+                <li><button class="lang-switch" aria-label="Language">EN</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <header class="page-header">
+        <h1>🪑 احجز طاولتك الآن</h1>
+        <p>احصل على أفضل تجربة طعام في مطعمنا</p>
+    </header>
+
+    <!-- ===== RESERVATION SECTION ===== -->
+    <section class="reservation-section">
+        <div class="section-container">
+            <div class="reservation-wrapper">
+                <div class="reservation-form-card fade-in">
+                    <h2>📋 نموذج الحجز</h2>
+                    <p>يرجى ملء البيانات أدناه لحجز طاولة</p>
+
+                    <form id="reservationForm" novalidate>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="r-name">الاسم الكامل <span class="required">*</span></label>
+                                <input type="text" id="r-name" name="name" required placeholder="اسمك الكامل">
+                            </div>
+                            <div class="form-group">
+                                <label for="r-phone">رقم الهاتف <span class="required">*</span></label>
+                                <input type="tel" id="r-phone" name="phone" required placeholder="+212 XXX XXX XXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="r-date">التاريخ <span class="required">*</span></label>
+                                <input type="date" id="r-date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="r-time">الوقت <span class="required">*</span></label>
+                                <select id="r-time" name="time" required>
+                                    <option value="">اختر الوقت</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="11:30">11:30</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="17:30">17:30</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="18:30">18:30</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="r-guests">عدد الأشخاص <span class="required">*</span></label>
+                                <select id="r-guests" name="guests" required>
+                                    <option value="">اختر العدد</option>
+                                    <option value="1">1 شخص</option>
+                                    <option value="2">2 شخص</option>
+                                    <option value="3">3 أشخاص</option>
+                                    <option value="4">4 أشخاص</option>
+                                    <option value="5">5 أشخاص</option>
+                                    <option value="6">6 أشخاص</option>
+                                    <option value="7">7 أشخاص</option>
+                                    <option value="8">8 أشخاص</option>
+                                    <option value="9">9 أشخاص</option>
+                                    <option value="10">10 أشخاص أو أكثر</option>
+                                </select>
+                            </div>
+                            <div class="form-group full">
+                                <label for="r-notes">ملاحظات إضافية</label>
+                                <textarea id="r-notes" name="notes" rows="4" placeholder="هل لديك طلبات خاصة أو تحفظات غذائية؟"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary">
+                                <span>✓</span> تأكيد الحجز
+                            </button>
+                        </div>
+                        <div class="form-message" role="alert"></div>
+                    </form>
+                </div>
+
+                <div class="reservation-info fade-in">
+                    <h2>ℹ️ معلومات مهمة</h2>
+                    
+                    <div class="info-box">
+                        <h3>🕒 ساعات العمل</h3>
+                        <ul>
+                            <li>الإثنين - الخميس: 10:00 - 22:30</li>
+                            <li>الجمعة - السبت: 10:00 - 23:00</li>
+                            <li>الأحد: 10:00 - 22:30</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>📞 تأكيد الحجز</h3>
+                        <p>سنتصل بك على الرقم المعطى لتأكيد حجزك في أقرب وقت ممكن.</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>💡 نصائح</h3>
+                        <ul>
+                            <li>احجز قبل 24 ساعة من الموعد المرغوب</li>
+                            <li>يمكنك الاتصال بنا مباشرة للحجوزات الكبيرة</li>
+                            <li>هناك موقف سيارات مجاني متاح</li>
+                            <li>نقبل الحجوزات لأي مناسبة خاصة</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>📍 موقعنا</h3>
+                        <p><strong>32 زنقة الشاوية</strong><br>
+                        الدار البيضاء، المغرب<br>
+                        بالقرب من السوق المركزي</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <h4>🐟 مطعم أمين للسمك</h4>
+                <p>أشهى المأكولات البحرية الطازجة في قلب الدار البيضاء.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/snackamine.darbouaza/" target="_blank" rel="noopener" class="social-link">f</a>
+                    <a href="https://www.instagram.com/explore/tags/snackamine/" target="_blank" rel="noopener" class="social-link">📷</a>
+                    <a href="https://www.tripadvisor.com/" target="_blank" rel="noopener" class="social-link">T</a>
+                </div>
+            </div>
+
+            <div>
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="menu.html">القائمة</a></li>
+                    <li><a href="reservation.html">حجز طاولة</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>الأطباق المميزة</h4>
+                <ul>
+                    <li><a href="menu.html#grillades">السمك المشوي</a></li>
+                    <li><a href="menu.html#tajine">التاجين</a></li>
+                    <li><a href="menu.html#plats">الأطباق المختلطة</a></li>
+                    <li><a href="menu.html#pasta">الباستا</a></li>
+                    <li><a href="menu.html#drinks">المشروبات</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>اتصل بنا</h4>
+                <p>📍 32 زنقة الشاوية، الدار البيضاء</p>
+                <p>📞 <a href="tel:+212522541331">+212 522 541 331</a></p>
+                <p>📧 <a href="mailto:info@amine-fish.ma">info@amine-fish.ma</a></p>
+                <p>🕒 يومياً: 10:00 - 22:30</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 مطعم أمين للسمك - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
